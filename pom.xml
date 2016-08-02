@@ -123,4 +123,11 @@
 			<url>http://dl.bintray.com/mystes/maven</url>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>bintray-mystes-maven</id>
+			<name>mystes-maven</name>
+			<url>https://api.bintray.com/maven/mystes/maven/wso2-esb-pdf-mediator/;publish=1</url>
+		</repository>
+	</distributionManagement>
 </project>
