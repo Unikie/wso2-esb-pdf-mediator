@@ -1,0 +1,25 @@
+## Customize the test machine
+machine:
+  java:
+    version: oraclejdk7
+
+dependencies:
+  # Cache maven local repository so that we don't have to get dependencies every time
+  cache_directories:
+    - ~/.m2/repository
+
+  override:
+    - mvn clean install
+
+test:
+  override:
+    # Run junit
+    - mvn verify
+
+  # After running tests collect junit & integration-test reports and build artifacts
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - mkdir -p $CIRCLE_TEST_REPORTS/integration-test/
+    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;  #JUnit tests
+    - find . -type f -regex ".*/target/failsafe-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/integration-test/ \;  #JUnit tests
+    - cp target/wso2-esb-pdf-mediator*.jar $CIRCLE_ARTIFACTS/ # Store builded jar as an artifact

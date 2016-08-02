@@ -1,0 +1,65 @@
+/* Modified 3.11.2012 15:45 */
+
+body
+{
+	margin:5px;
+	padding:0;
+	background-color:#ffffff;
+	color:#000000;
+	width:99%;
+}
+
+table
+{
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+	display: table;
+    width: 100%;
+}
+
+td
+{
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+	text-align: center;
+}
+
+td.title { padding-right: 0.4em; }
+
+table.Rows
+{
+	width:100%;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	margin:2ex 0em 2ex 0em;
+	border-collapse:collapse;
+}
+
+table.Rows td
+{
+	margin:0px;
+	padding:3px 3px 0px 3px;
+	vertical-align:top;
+}
+
+tr.groupSeparator td
+{
+	height:1em;
+}
+
+tr.rowSeparator td
+{
+	height:0.5em;
+	border-top:1px dashed black;
+}
+
+tr.rowBottom td
+{
+	height:0.5em;
+}
+
+h2 {
+	text-align: center;
+}

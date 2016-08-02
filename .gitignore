@@ -1,0 +1,7 @@
+.README.md.html
+.classpath
+.project
+.settings
+target
+.idea
+*.iml
