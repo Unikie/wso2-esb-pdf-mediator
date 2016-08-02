@@ -1,5 +1,5 @@
 # wso2-esb-pdf-mediator
-
+![Build status](https://circleci.com/gh/Mystes/wso2-esb-pdf-mediator.svg?style=shield&circle-token=8e9634318a30032cfb0db87a030a65a97380bcb5)
 ## What is WSO2 ESB?
 [WSO2 ESB](http://wso2.com/products/enterprise-service-bus/) is an open source Enterprise Service Bus that enables interoperability among various heterogeneous systems and business applications.
 
