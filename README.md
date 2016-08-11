@@ -34,7 +34,7 @@ Mediator can be used as other WSO2 ESB mediator.
 
 #### Usage
 
-* Oracle Java 6 or higher
+* Oracle Java 7 or higher
 * WSO2 ESB
     * Pdf Mediator has been tested with WSO2 ESB versions 4.8.1
 
