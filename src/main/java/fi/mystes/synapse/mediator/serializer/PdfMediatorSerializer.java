@@ -94,8 +94,8 @@ public class PdfMediatorSerializer extends AbstractMediatorSerializer {
      */
     private void setCssFilePath(PdfMediator mediator, OMElement pdf) {
     	OMElement cssFilePath = fac.createOMElement("cssFilePath", synNS, pdf);
-    	if (mediator.getPdfFilePathExpression() != null) {
-    		SynapseXPathSerializer.serializeXPath(mediator.getCssFilePathExpression(), cssFilePath, "expression");
+    	if (mediator.getCssFilePathExpression() != null) {
+            SynapseXPathSerializer.serializeXPath(mediator.getCssFilePathExpression(), cssFilePath, "expression");
     	} else {
     		cssFilePath.addAttribute(fac.createOMAttribute("value", nullNS, mediator.getCssFilePath()));
     	}
@@ -109,7 +109,7 @@ public class PdfMediatorSerializer extends AbstractMediatorSerializer {
      */
     private void setXslFilePath(PdfMediator mediator, OMElement pdf) {
     	OMElement xslFilePath = fac.createOMElement("xslFilePath", synNS, pdf);
-    	if (mediator.getPdfFilePathExpression() != null) {
+    	if (mediator.getXslFilePathExpression() != null) {
     		SynapseXPathSerializer.serializeXPath(mediator.getXslFilePathExpression(), xslFilePath, "expression");
     	} else {
     		xslFilePath.addAttribute(fac.createOMAttribute("value", nullNS, mediator.getXslFilePath()));
